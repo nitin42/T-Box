@@ -2,7 +2,7 @@ require('assert');
 
 const Vorpal = require('vorpal');
 var should = require('should');
-var main = require('./src/main.js');
+var main = require('../src/main.js');
 
 var vorpal, stdout;
 
