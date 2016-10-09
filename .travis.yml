@@ -1,13 +1,11 @@
-os: osx
-env:
-  - NODE_VERSION="0.12"
-  - NODE_VERSION="4"
-  - NODE_VERSION="stable"
-
-install:
-  - nvm install $NODE_VERSION
-  - node --version
-  - npm install
-
-script:
-  - npm test
+language: node_js
+node_js:
+  - "0.12"
+  - "0.11"
+  - "0.10"
+  - "iojs-v1"
+  - "iojs-v2"
+sudo: false
+branches:
+  only:
+    - master
