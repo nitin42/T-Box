@@ -5,7 +5,7 @@ A command line utility to manage the file uploads, downloads and sharing directl
 ### Requirements & Dependencies
 
 * Node.js(v4.6.0)
-* Dropbox app (optional for checking the result)
+* Dropbox app (optional for checking the results)
 
 ### Install
 
@@ -38,6 +38,8 @@ To manage the files directly from terminal on your **Dropbox** account, you woul
     Save [page] [nick]  Save a url to Dropbox with a name provided
 
 ```
+
+**Note** - Due to some new changes in the Dropbox API, now users can only upload the file less than 150 MB with minimal methods. Additional uploads with size more than 150 MB can only be uploaded with upload sessions. 
 
 ### Contributing 
 
