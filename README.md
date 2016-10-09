@@ -1,5 +1,5 @@
 ## T-Box
-[![CircleCI](https://circleci.com/gh/nitin42/T-Box.svg?style=svg)](https://circleci.com/gh/nitin42/T-Box)
+[![CircleCI](https://circleci.com/gh/nitin42/T-Box.svg?style=svg)](https://circleci.com/gh/nitin42/T-Box) https://img.shields.io/badge/dependencies-up--to--date-green.svg  https://img.shields.io/badge/npm-2.15.9-blue.svg
 
 A command line utility to manage the file uploads, downloads and sharing directly from terminal on your **Dropbox**. Built with [Vorpal.js](vorpal.js.org).
 
