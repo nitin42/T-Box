@@ -33,14 +33,6 @@ describe('terminal-drop', function(){
 			}).should.not.throw();
 		});
 
-		it('should upload files', function(){
-			vorpal.exec('Upload /Users/nitintulswani/Desktop/dropbox.jpg', function(err){
-				should.not.exist(err);
-				stdout.should.containEql('uploaded');
-				stdout.should.containEql('File uploaded');
-			});
-		});
-
 		it('should share files through a link', function(){
 			vorpal.exec('Share /Users/nitintulswani/Dropbox/functionality.js', function(err){
 				should.not.exist(err);
