@@ -6,3 +6,4 @@
 * Improving the meta information display about the file requested.
 * Optimising the workflow (managing the callbacks and further UI updates).
 * Immersive build of the vorpal app.
+* Adding progress bars for fun.
