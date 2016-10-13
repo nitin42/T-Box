@@ -1,4 +1,4 @@
-## Future improvement for the T-Box
+## Future goals for the T-Box
 
 * Remove the cumbersome process of pasting the access token in ```token.js``` module.
 * Implementing the upload session for uploading the file with size greater than 150 MB.
