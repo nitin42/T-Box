@@ -43,7 +43,7 @@ To manage the files directly from terminal on your **Dropbox** account, you woul
 
 ```
 
-> *** Check the app demo [here](https://asciinema.org/a/d2hrrphrtpk9ijcr67aftjlhy)***.
+> ***Check the app demo [here](https://asciinema.org/a/d2hrrphrtpk9ijcr67aftjlhy)***.
 
 **Note** - Due to some new changes in the Dropbox API, now users can only upload the file less than 150 MB with minimal methods. Additional uploads with size more than 150 MB can only be uploaded with upload sessions. 
 
