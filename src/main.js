@@ -19,7 +19,9 @@ nick;
 var error = chalk.bold.red;
 var info = chalk.bold.blue;
 
-
+/**
+ * @params vorpal - vorpal commands
+ */
 module.exports = function(vorpal) {
 
 					// Uploading a file
@@ -51,6 +53,9 @@ module.exports = function(vorpal) {
 									default: false,
 									message: info('The file ' + src + ' will be uploaded to Dropbox. Sure?')
 								},
+								/**
+								 * @params {string} result - Result from the user command 
+								 */
 								function(result){
 									if (result.continue) {
 										upload();
@@ -106,6 +111,9 @@ module.exports = function(vorpal) {
 									default: false,
 									message: info('Link for the file ' + fl + ' will be generated. Sure?')
 								},
+								/**
+								 * @params {string} result - Result from the user command 
+								 */
 								function(result){
 									if (result.continue) {
 										generate_link();
@@ -150,6 +158,9 @@ module.exports = function(vorpal) {
 							}
 							
 							// Expanind the relatively short urls using the request module
+							/**
+							 * @params {string} shortUrl - Short url for download redirect
+							 */
 							function download(shortUrl) {
 								request( { method: "HEAD", url: shortUrl, followAllRedirects: true },
 									function (error, response) {
