@@ -14,7 +14,7 @@ const path = require('path');
 const dbx = require('../utils/token.js').dbx;
 const chalk = require('chalk');
 
-// Globals
+/** Globals */
 var file, src, FILE, dir, linkto, fl, token, link, 
 meta, info, n, folder, list, unneeded, unlink, URL, 
 nick;
