@@ -1,13 +1,17 @@
+/**
+ * @author Nitin Tulswani <tulswani19@gmail.com>
+ */
+
 'use strict';
 
-// Dependencies
+/** Dependencies */
 const vorpal = require('vorpal')();
-var utilities = require('../utils/utilities.js');
-var Dropbox = require('dropbox');
-var fs = require('fs');
-var request = require("request");
-var path = require('path');
-var dbx = require('../utils/token.js').dbx;
+const utilities = require('../utils/utilities.js');
+const Dropbox = require('dropbox');
+const fs = require('fs');
+const request = require("request");
+const path = require('path');
+const dbx = require('../utils/token.js').dbx;
 const chalk = require('chalk');
 
 // Globals
@@ -15,9 +19,11 @@ var file, src, FILE, dir, linkto, fl, token, link,
 meta, info, n, folder, list, unneeded, unlink, URL, 
 nick;
 
-// Chalks
-var error = chalk.bold.red;
-var info = chalk.bold.blue;
+/** 
+ * @instance
+ */
+const error = chalk.bold.red;
+const info = chalk.bold.blue;
 
 /**
  * @params vorpal - vorpal commands
@@ -43,8 +49,9 @@ module.exports = function(vorpal) {
 									} 
 								}
 							}
-
-							var a = utilities.FILE(src); // Set the file path
+							
+							/** @type {string} - file source  */
+							var a = utilities.FILE(src); 
 
 							if (fs.existsSync(file)) {
 								this.prompt({
